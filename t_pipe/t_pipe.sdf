@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="t_pipe">
+    <static>false</static>
+    <link name="link">
+    <inertial>
+      <pose>0.0465 0.04 0.020 0 0 0</pose>
+      <mass>0.049263</mass>
+	  <inertia>
+	    <ixx>0.000032494</ixx>
+	    <ixy>0.0</ixy>
+	    <ixz>0.0</ixz>
+	    <iyy>0.000044475</iyy>
+	    <iyz>0.0</iyz>
+	    <izz>0.00005166</izz>
+	  </inertia>
+    </inertial>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+         <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/catkin_ws/src/models/t_pipe/meshes/collision.STL</uri>  
+          </mesh>
+        </geometry>  
+      </collision>
+      <visual name="visual">    
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/catkin_ws/src/models/t_pipe/meshes/pipe.STL</uri>  
+          </mesh>
+        </geometry>        
+      </visual>
+    </link>
+  </model>
+</sdf>
+
